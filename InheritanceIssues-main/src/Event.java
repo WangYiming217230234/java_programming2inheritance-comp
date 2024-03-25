@@ -91,7 +91,10 @@ public class Event{
         return eventID + " " + eventName + " " + eventLocation + " " + pointOfContact + " " + eventCost + " " + totalParticipants + " " + totalEventDays;
     }
 
-    public void calculateEventCost(){
-        this.eventCost = baseEventCost + (baseEventCost * tax) + insuranceCost;
-    }
+    public abstract void calculateEventCost();
+
+    @Override
+    public String toString() {
+        return eventID + " " + eventName + " " + eventLocation + " " + pointOfContact + " " + eventCost + " " + totalParticipants + " " + totalEventDays;
+    } 
 }
