@@ -1,12 +1,24 @@
 public class Main {
+
     public static void main(String[] args) throws Exception {
+
         ConferenceEvent conferenceEvent = new ConferenceEvent("E001", "AI Conference", "Paris", "Peng Tian", 50, 2, 25, 40, 60);
+
         conferenceEvent.calculateEventCost();
+
         System.out.println(conferenceEvent);
 
-        PastEvent pastEvent = new PastEvent("E001", "AI Conference", "Paris", "Peng Tian", 50, 2);
-        pastEvent.calculateEventCost();
-        pastEvent.setPaymentDetails("Pending", true);
+        MusicEvent musicEvent = new MusicEvent("E002", "Rock Concert", "London", "John Smith", 100, 3, 50);
+
+        musicEvent.calculateEventCost();
+
+        System.out.println(musicEvent);
+
+        PastEvent pastEvent = new PastEvent("E003", "Gala Dinner", "New York", "Emily Brown", 200, 1);
+
+        pastEvent.setPaymentDetails("Paid", true);
+
         System.out.println(pastEvent);
+
     }
 }

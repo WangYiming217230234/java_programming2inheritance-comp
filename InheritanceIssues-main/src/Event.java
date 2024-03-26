@@ -59,13 +59,6 @@ public class Event{
         this.pointOfContact = pointOfContact;
     }
 
-    /* public double getEventCost(){
-        return eventCost;
-    }
-
- */    /* public void setEventCost(double eventCost){
-        this.eventCost = eventCost;
-    } */
 
     public int getTotalParticipants(){
         return totalParticipants;
@@ -91,7 +84,7 @@ public class Event{
         return eventID + " " + eventName + " " + eventLocation + " " + pointOfContact + " " + eventCost + " " + totalParticipants + " " + totalEventDays;
     }
 
-    public abstract void calculateEventCost();
+    
 
     @Override
     public String toString() {

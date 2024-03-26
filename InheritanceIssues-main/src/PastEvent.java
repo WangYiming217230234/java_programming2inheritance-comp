@@ -27,6 +27,17 @@ public class PastEvent extends Event{
         this.requiresExtension = requiresExtension;
     }
 
+    public void caculateCost(){
+        double cost = 1000 + (1000 * tax);
+    }
+
+    public void setPaymentDetails(String paymentStatus,boolean requiresExtension){
+        this.paymentDetails = "The event cost was" + pastEventCost + "and the payment status is" + paymentStatus + "\n" + "The Customer requires extension?: " + requiresExtension;
+    }
+
+    public String getPaymentDetails() {
+        return paymentDetails;
+    }
     @Override
     public void calculateEventCost(){
         super.calculateEventCost();
