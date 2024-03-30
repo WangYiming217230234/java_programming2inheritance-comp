@@ -18,7 +18,6 @@ public class Main {
 
         pastEvent.setPaymentDetails("Paid", true);
 
-        
         System.out.println(pastEvent);
 
     }
