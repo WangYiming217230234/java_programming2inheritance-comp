@@ -1,0 +1,13 @@
+1.divideTest()
+function:Tests a function that divides two integers
+input:100,0
+
+
+2.input:999999999999999999999999999999,1
+result:error,integer overflow
+
+3.input:"helllo",114514
+result:error,The input type does not match
+
+4.imput:100,null
+result:error,The input type does not match
